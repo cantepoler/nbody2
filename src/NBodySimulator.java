@@ -48,17 +48,18 @@ class NBodySimulator {
                 StdDraw.show();
                 StdDraw.pause(pauseTime);
             }
-        }
-        while (true) {
-            StdDraw.clear();
-            integrator.move(universe);
-            drawUniverse();
-            StdDraw.show();
-            StdDraw.pause(pauseTime);
+        } else {
+            while (true) {
+                StdDraw.clear();
+                integrator.move(universe);
+                drawUniverse();
+                StdDraw.show();
+                StdDraw.pause(pauseTime);
+            }
         }
     }
 
-    public void drawUniverse() {
+    private void drawUniverse() {
         for (int i = 0; i < universe.getNumBodies(); i++) {
             Vector position = universe.getBodyPosition(i);
             double x = position.cartesian(0);

@@ -9,10 +9,10 @@
  ******************************************************************************/
 
 public class Body {
-    private Vector position;           // position
-    private Vector velocity;           // velocity
-    private Vector acceleration;
-    private final double mass;  // mass
+    private Vector position;               // position
+    private Vector velocity;               // velocity
+    private Vector acceleration;           // acceleration
+    private final double mass;             // mass
     private double G = 6.67e-11;           // gravity
 
     public Body(Vector r, Vector v, double mass) {
