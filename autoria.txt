@@ -1,0 +1,5 @@
+1706732 Pol Cantero Martinez
+1702336 Adrià Morales Cuñat
+1707994 Albert Salazar Palacios
+
+Aquest treball ha estat elaborat per Albert Salazar Palacios i Pol Cantero Martinez en la reestructuració del codi i les extensions, i per Adrià Morales Cuñat en la part més teòrica treballant també de forma conjunta amb els altres dos membres per la creació del diagrama UML.

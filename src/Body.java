@@ -1,13 +1,3 @@
-/******************************************************************************
- *  Compilation:  javac Body.java
- *  Execution:    java Body
- *  Dependencies: Vector.java StdDraw.java
- *
- *  Implementation of a 2D Body with a position, velocity and mass.
- *
- *
- ******************************************************************************/
-
 public class Body {
     private Vector position;               // position
     private Vector velocity;               // velocity

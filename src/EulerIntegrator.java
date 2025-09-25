@@ -3,11 +3,8 @@ public class EulerIntegrator extends Integrator {
         super(dt);
     }
 
-    public void move(Universe universe) {
+    public void move(Universe universe) {           //Moves every body of a universe by computing the force and setting the new velocities and positions.
         int numBodies = universe.getNumBodies();
-        // move the bodies "synchronoulsy" : freeze them, compute the new position
-        // and velocities of all the bodies and *then* update them all. Otherwise
-        // in computeForce() we would mix old and new body positions
         Vector[] newPositions = new Vector[numBodies];
         Vector[] newVelocities = new Vector[numBodies];
         for (int i = 0; i < numBodies; i++) {
@@ -18,7 +15,6 @@ public class EulerIntegrator extends Integrator {
         for (int i = 0; i < numBodies; i++) {
             universe.setBodyPosition(i, newPositions[i]);
             universe.setBodyVelocity(i, newVelocities[i]);
-        // no need to set the acceleration in Euler integration
         }
     }
 }

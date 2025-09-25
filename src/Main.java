@@ -20,10 +20,10 @@ public class Main {
                 universe = UniverseFactory.makeChoreography(1);
                 break;
             case 2:
-                universe = UniverseFactory.makePlanetaryConfiguration(6);
+                universe = UniverseFactory.makePlanetaryConfiguration(7);
                 break;
             case 3:
-                universe = UniverseFactory.makeCentralConfiguration(5, 0, 0.00006);
+                universe = UniverseFactory.makeCentralConfiguration(7, 0, 1);
                 break;
             default:
                 universe = UniverseFactory.makeUniverseFromFile(fname);
